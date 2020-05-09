@@ -1,0 +1,80 @@
+.ui-lib {
+  background-color: #f9fbfc;
+  padding: 10px 20px 20px 450px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__body {
+    flex: 1;
+    color: #232d40;
+    max-width: 800px;
+  }
+
+  &__h1,
+  &__h2,
+  &__h3,
+  &__p,
+  .toolbar {
+    font-family: $font-family;
+  }
+
+  &__h1 {
+    font-size: 60px;
+    margin-bottom: 60px;
+  }
+
+  &__h2 {
+    font-size: 60px;
+    margin-bottom: space(3);
+  }
+
+  &__h3 {
+    font-size: 40px;
+    margin-bottom: space(1.5);
+  }
+
+  &__p {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: space(1.5);
+  }
+
+  &__block {
+    display: none;
+
+    &._active {
+      display: block;
+    }
+  }
+
+  &__item {
+    margin-bottom: space(6);
+  }
+
+  &__example {
+    box-shadow: 0 3px 20px 0 rgba(27, 36, 72, 0.26);
+    border-radius: 10px;
+    padding: 30px;
+    margin: space(3) 0;
+  }
+
+  &__display-item {
+    display: flex;
+  }
+  &__display-box {
+    width: 49px;
+    display: flex;
+    align-items: center;
+
+    div {
+      width: 100%;
+      height: calc(100% - 14px);
+      border-radius: 10px;
+    }
+  }
+  &__display-code {
+    padding-left: 14px;
+    flex: 1;
+  }
+}

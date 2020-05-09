@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="ui-lib">
+      <!-- Side Bar -->
+      <div class="ui-lib__side-bar menu-active">
+        <div class="logo"></div>
+
+        <ul>
+          <li class="_active" id="nav-getting-started">Getting Started</li>
+          <li id="nav-base">Base</li>
+          <ul>
+            <li id="nav-colors">Colors</li>
+            <li id="nav-grid">Grid</li>
+            <li id="nav-screen">Screen</li>
+            <li id="nav-typography">Typography</li>
+            <li id="nav-utilties">Utlities</li>
+          </ul>
+          <li id="nav-components">Components</li>
+          <ul>
+            <li id="nav-buttons">Buttons</li>
+            <li id="nav-cards">Cards</li>
+            <li id="nav-icons">Icons</li>
+            <li id="nav-inputs">Inputs</li>
+          </ul>
+          <li id="nav-layout">Layout</li>
+          <ul>
+            <li id="nav-header">Header</li>
+            <li id="nav-hero">Hero</li>
+            <li id="nav-inputs">Footer</li>
+          </ul>
+        </ul>
+      </div>
+
+      <!-- Body -->
+      <div class="ui-lib__body menu-active">
+        <!-- Getting Started Block -->
+        <div class="ui-lib__block _active" id="getting-started">
+          <h2 class="ui-lib__h2">Getting Started</h2>
+
+          <!-- Intro -->
+          <div class="ui-lib__item">
+            <p class="ui-lib__p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              blandit nec neque eu ullamcorper. Mauris lorem nibh, imperdiet nec
+              iaculis ornare, porta et eros. Nam elit odio, egestas id aliquet
+              eget, mollis a odio. Duis vehicula ullamcorper velit, ut bibendum
+              purus semper et. Phasellus consectetur dignissim nisi ac mattis.
+            </p>
+          </div>
+
+          <!-- How to -->
+          <div class="ui-lib__item">
+            <h2 class="ui-lib__h3">How to use</h2>
+            <p class="ui-lib__p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              blandit nec neque eu ullamcorper. Mauris lorem nibh, imperdiet nec
+              iaculis ornare, porta et eros. Nam elit odio, egestas id aliquet
+              eget, mollis a odio. Duis vehicula ullamcorper velit, ut bibendum
+              purus semper et. Phasellus consectetur dignissim nisi ac mattis.
+            </p>
+          </div>
+        </div>
+
+        <!-- ************************************* -->
+        <!-- Base Section -->
+        <div class="ui-lib__block" id="base">
+          <h2 class="ui-lib__h2">Base</h2>
+
+          <!-- Intro -->
+          <div class="ui-lib__item">
+            <p class="ui-lib__p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              blandit nec neque eu ullamcorper. Mauris lorem nibh, imperdiet nec
+              iaculis ornare, porta et eros. Nam elit odio, egestas id aliquet
+              eget, mollis a odio. Duis vehicula ullamcorper velit, ut bibendum
+              purus semper et. Phasellus consectetur dignissim nisi ac mattis.
+            </p>
+          </div>
+        </div>
+
+        <!-- Colors Block -->
+        <div class="ui-lib__block" id="colors">
+          <h2 class="ui-lib__h2">Colors</h2>
+
+          <!-- Intro -->
+          <div class="ui-lib__item">
+            <p class="ui-lib__p">
+              Use the following color function to specify colors
+            </p>
+          </div>
+
+          <!-- Colors Function -->
+          <div class="ui-lib__item">
+            <h3 class="ui-lib__h3">Colors Function</h3>
+
+            <p class="ui-lib__p">
+              Use the following color function to specify colors
+            </p>
+            <pre>
+              <code class="language-scss">
+                color(group: string, shade: string *optional)
+              </code>
+            </pre>
+          </div>
+
+          <!-- Color Example 1 -->
+          <div class="ui-lib__item">
+            <h3 class="ui-lib__h3">Blue</h3>
+            <div class="ui-lib__display">
+              <div class="ui-lib__display-item">
+                <div class="ui-lib__display-box">
+                  <div class="bg-blue"></div>
+                </div>
+                <div class="ui-lib__display-code">
+                  <pre class="language-scss"><code>color(blue)</code></pre>
+                </div>
+              </div>
+              <div class="ui-lib__display-item">
+                <div class="ui-lib__display-box">
+                  <div class="bg-red"></div>
+                </div>
+                <div class="ui-lib__display-code">
+                  <pre
+                    class="language-scss"
+                  ><code>color(blue, medium)</code></pre>
+                </div>
+              </div>
+              <div class="ui-lib__display-item">
+                <div class="ui-lib__display-box">
+                  <div class="bg-green"></div>
+                </div>
+                <div class="ui-lib__display-code">
+                  <pre
+                    class="language-scss"
+                  ><code>color(blue, light)</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ************************************* -->
+        <!-- Components Section -->
+        <div class="ui-lib__block" id="components">
+          <h2 class="ui-lib__h2">Components</h2>
+
+          <!-- Intro -->
+          <div class="ui-lib__item">
+            <p class="ui-lib__p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              blandit nec neque eu ullamcorper. Mauris lorem nibh, imperdiet nec
+              iaculis ornare, porta et eros. Nam elit odio, egestas id aliquet
+              eget, mollis a odio. Duis vehicula ullamcorper velit, ut bibendum
+              purus semper et. Phasellus consectetur dignissim nisi ac mattis.
+            </p>
+          </div>
+        </div>
+
+        <!-- Buttons Block -->
+        <div class="ui-lib__block" id="buttons">
+          <h2 class="ui-lib__h2">Buttons</h2>
+
+          <!-- Intro -->
+          <div class="ui-lib__item">
+            <p class="ui-lib__p">See following examples</p>
+          </div>
+
+          <!-- Normal Buttons -->
+          <div class="ui-lib__item">
+            <h3 class="ui-lib__h3">Normal Buttons</h3>
+            <div class="ui-lib__example">
+              <button class="btn">
+                Button Text
+              </button>
+              <button class="btn btn--secondary">
+                Button Text
+              </button>
+            </div>
+          </div>
+
+          <!-- More Buttons -->
+          <div class="ui-lib__item">
+            <h3 class="ui-lib__h3">Some more Buttons</h3>
+            <div class="ui-lib__example">
+              <button class="btn-action">
+                <span></span>
+              </button>
+              <button class="btn-action btn--secondary">
+                <span></span>
+              </button>
+              <button class="btn-square">
+                <span></span>
+              </button>
+              <button class="btn-square btn--secondary">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- End of Buttons -->
+
+        <!-- ************************************* -->
+        <!-- Layout Section -->
+        <div class="ui-lib__block" id="layout">
+          <h2 class="ui-lib__h2">Layout</h2>
+
+          <!-- Intro -->
+          <div class="ui-lib__item">
+            <p class="ui-lib__p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              blandit nec neque eu ullamcorper. Mauris lorem nibh, imperdiet nec
+              iaculis ornare, porta et eros. Nam elit odio, egestas id aliquet
+              eget, mollis a odio. Duis vehicula ullamcorper velit, ut bibendum
+              purus semper et. Phasellus consectetur dignissim nisi ac mattis.
+            </p>
+          </div>
+        </div>
+
+        <!-- End of Blocks -->
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

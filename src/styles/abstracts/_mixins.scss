@@ -1,0 +1,82 @@
+// Event wrapper
+/// @param {Bool} $self [false] - Whether or not to include current selector
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+// Select elemt when inside arg element
+/// @param {String} $context
+
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+// Use in place of ::before, ::after
+/// @param {Property} $display [block]
+/// @param {Property} $pos [block]
+/// @param {String} $content [""]
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+/****************************************************************************
+X.X - Font Sizes Mixin 
+* Two mixins used to generate a responsive set of font-sizes
+*/
+///
+/// @param {Number} $width
+/// @param {String} $type [min] - type of breakpoint - default min-width
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($screen, $width) {
+    $width: map_get($screen, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin bg-center() {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin escape-pad() {
+  margin-left: -$container-padding;
+  margin-right: -$container-padding;
+}
+
+$theme-colors: (
+  blue: blue,
+  red: red,
+  green: green,
+);
+
+@each $color-name, $color in $theme-colors {
+  .bg-#{$color-name} {
+    background-color: $color;
+  }
+}
